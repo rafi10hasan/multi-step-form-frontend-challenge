@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="step-container">
+        <!-- 1 -->
+        <div class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="274"
+            height="568"
+            fill="none"
+            viewBox="0 0 274 568"
+          >
+            <rect width="290" height="595" fill="#483EFF" rx="10" />
+            <mask
+              id="a"
+              width="274"
+              height="568"
+              x="0"
+              y="0"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha"
+            >
+              <rect width="290" height="595" fill="#fff" rx="10" />
+            </mask>
+            <g mask="url(#a)">
+              <path
+                fill="#6259FF"
+                fill-rule="evenodd"
+                d="M-34.692 543.101C3.247 632.538 168.767 685.017 211.96 612.52c43.194-72.497-66.099-85.653-104.735-160.569-38.635-74.916-68.657-121.674-124.482-104.607-55.824 17.068-55.375 106.32-17.436 195.757Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill="#F9818E"
+                fill-rule="evenodd"
+                d="M233.095 601.153c60.679-28.278 92.839-143.526 41.875-171.528-50.965-28.003-57.397 47.579-108.059 75.987-50.662 28.408-82.14 50.207-69.044 88.241 13.096 38.034 74.549 35.578 135.228 7.3Z"
+                clip-rule="evenodd"
+              />
+              <path
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="bevel"
+                stroke-width="5"
+                d="m165.305 469.097 10.607-10.806M209.461 474.581l-12.506-10.503M187.56 488.991l-6.908 14.798"
+              />
+              <path
+                fill="#FFAF7E"
+                d="M.305 546.891c37.003 0 67-29.997 67-67s-29.997-67-67-67-67 29.997-67 67 29.997 67 67 67Z"
+              />
+            </g>
+          </svg>
+          <!-- 1 -->
+          <div class="step-count one">
+            <button class="number-btn active">1</button>
+            <div class="step-name">
+              <h5>STEP 1</h5>
+              <p>Your info</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="step-count two">
+            <button class="number-btn">2</button>
+            <div class="step-name">
+              <h5>STEP 2</h5>
+              <p>Select plan</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="step-count three">
+            <button class="number-btn">3</button>
+            <div class="step-name">
+              <h5>STEP 3</h5>
+              <p>Add ons</p>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="step-count four">
+            <button class="number-btn">4</button>
+            <div class="step-name">
+              <h5>STEP 4</h5>
+              <p>Summary</p>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+        <!-- svg end -->
+      </div>
+      <!-- step container end -->
+
+      <div class="info-container">
+        <!-- 1 -->
+        <div class="your-info active">
+          <h1>Personal Info</h1>
+          <p>please provide your name,email adress,and phone number</p>
+
+          <form class="info-form" id="myForm">
+            <label for="">name</label>
+            <input type="text" name="name" required placeholder="enter your name" />
+
+            <label for="">email</label>
+            <input type="email" name="email" required placeholder="enter your email" />
+
+            <label for="">password</label>
+            <input type="password" name="password" required placeholder="enter your password" />
+
+            <button type="submit" id="submit-btn">next step</button>
+          </form>
+          <!-- <div class="btn-container">
+            <div></div>
+            <button type="submit" class="next-btn">next step</button>
+        </div> -->
+        </div>
+
+        <!-- 2 -->
+        <div class="your-info">
+          <h1>Select your plan</h1>
+          <p>you have the option of monthly or yearly billing</p>
+
+          <div class="plan-section monthly active">
+            <div class="plan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#FFAF7E" />
+                  <path
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"
+                  />
+                </g>
+              </svg>
+              <h4>Arcade</h4>
+              <span>$<span class="price">9</span>/mo</span>
+            </div>
+
+            <div class="plan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#F9818E" />
+                  <path
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z"
+                  />
+                </g>
+              </svg>
+              <h4>Advance</h4>
+              <span>$<span class="price">12</span>/mo</span>
+            </div>
+
+            <div class="plan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#483EFF" />
+                  <path
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z"
+                  />
+                </g>
+              </svg>
+              <h4>Pro</h4>
+              <span>$<span class="price">15</span>/mo</span>
+            </div>
+          </div>
+
+          <!-- plan section yearly -->
+
+          <div class="plan-section yearly">
+            <div class="plan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#FFAF7E" />
+                  <path
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"
+                  />
+                </g>
+              </svg>
+              <h4>Arcade</h4>
+              <span>$<span class="price">90</span>/yr</span>
+              <p>2 Months free</p>
+            </div>
+
+            <div class="plan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#F9818E" />
+                  <path
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z"
+                  />
+                </g>
+              </svg>
+              <h4>Advance</h4>
+              <span>$<span class="price">120</span>/yr</span>
+              <p>2 Months free</p>
+            </div>
+
+            <div class="plan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#483EFF" />
+                  <path
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z"
+                  />
+                </g>
+              </svg>
+              <h4>Pro</h4>
+              <span>$<span class="price">150</span>/yr</span>
+              <p>2 Months free</p>
+            </div>
+          </div>
+
+          <div class="monthly-yearly">
+            <h4>Monthly</h4>
+            <div class="checkbox-wrapper-22">
+              <label class="switch" id="toggle-btn" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+            <h4>Yearly</h4>
+          </div>
+
+          <div class="btn-container">
+            <button class="prev-btn">Go back</button>
+            <button class="next-btn">next step</button>
+          </div>
+        </div>
+        <!-- 3 -->
+
+        <div class="your-info" id="service-field">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+
+          <!-- add-ons plan monthly -->
+          <div class="add-ons-plan active">
+            <!-- 1 -->
+            <div class="services-section">
+              <div class="services">
+                <div class="checkbox">
+                  <input type="checkbox" name="" class="services-checkbox" />
+                </div>
+
+                <div class="services-name">
+                  <h3>online service</h3>
+                  <p>Access to multiplayer games</p>
+                </div>
+              </div>
+
+              <div class="price">
+                <span>+$<span>1</span>/mo</span>
+              </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="services-section">
+              <div class="services">
+                <div class="checkbox">
+                  <input type="checkbox" name="" class="services-checkbox" />
+                </div>
+
+                <div class="services-name">
+                  <h3>Large Storage</h3>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+              </div>
+
+              <div class="price">
+                <span>+$<span>1</span>/mo</span>
+              </div>
+            </div>
+
+            <!-- 3 -->
+
+            <div class="services-section">
+              <div class="services">
+                <div class="checkbox">
+                  <input type="checkbox" name="" class="services-checkbox" />
+                </div>
+
+                <div class="services-name">
+                  <h3>Customizable profile</h3>
+                  <p>Custom theme on your profile</p>
+                </div>
+              </div>
+
+              <div class="price">
+                <span>+$<span>2</span>/mo</span>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <!-- add-ons plan yearly -->
+          <div class="add-ons-plan">
+            <!-- 1 -->
+            <div class="services-section">
+              <div class="services">
+                <div class="checkbox">
+                  <input type="checkbox" name="" class="services-checkbox" />
+                </div>
+
+                <div class="services-name">
+                  <h3>online service</h3>
+                  <p>Access to multiplayer games</p>
+                </div>
+              </div>
+
+              <div class="price">
+                <span>+$<span>10</span>/yr</span>
+              </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="services-section">
+              <div class="services">
+                <div class="checkbox">
+                  <input type="checkbox" name="" class="services-checkbox" />
+                </div>
+
+                <div class="services-name">
+                  <h3>Large Storage</h3>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+              </div>
+
+              <div class="price">
+                <span>+$<span>20</span>/yr</span>
+              </div>
+            </div>
+
+            <!-- 3 -->
+
+            <div class="services-section">
+              <div class="services">
+                <div class="checkbox">
+                  <input type="checkbox" name="" class="services-checkbox" />
+                </div>
+
+                <div class="services-name">
+                  <h3>Customizable profile</h3>
+                  <p>Custom theme on your profile</p>
+                </div>
+              </div>
+
+              <div class="price">
+                <span>+$<span>20</span>/yr</span>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+
+          <div class="btn-container">
+            <button class="prev-btn">Go back</button>
+            <button class="next-btn">next step</button>
+          </div>
+        </div>
+
+        <!-- 4 -->
+
+        <div class="your-info">
+          <h1>Finishing Up</h1>
+          <p>Double check everything looks ok before confirming</p>
+
+          <div id="summary-section">
+            <div class="selected-plan">
+              <h3></h3>
+              <span></span>
+            </div>
+
+            <div class="underline"></div>
+
+            <div id="selected-add-ons"></div>
+          </div>
+
+          <div class="total-price">
+            <h4></h4>
+            <span></span>
+          </div>
+
+          <div class="btn-container">
+            <button class="prev-btn">Go back</button>
+            <button id="confirm-btn">confirm</button>
+          </div>
+        </div>
+
+        <div class="your-info">
+          <div class="confirmation-msg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+              <path fill="none" stroke="#FFF" stroke-width="2" d="m1 4 3.433 3.433L10.866 1" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+              <g fill="none">
+                <circle cx="40" cy="40" r="40" fill="#F9818E" />
+                <path
+                  fill="#E96170"
+                  d="M48.464 79.167c.768-.15 1.53-.321 2.288-.515a40.04 40.04 0 0 0 3.794-1.266 40.043 40.043 0 0 0 3.657-1.63 40.046 40.046 0 0 0 12.463-9.898A40.063 40.063 0 0 0 78.3 51.89c.338-1.117.627-2.249.867-3.391L55.374 24.698a21.6 21.6 0 0 0-15.332-6.365 21.629 21.629 0 0 0-15.344 6.365c-8.486 8.489-8.486 22.205 0 30.694l23.766 23.775Z"
+                />
+                <path
+                  fill="#FFF"
+                  d="M40.003 18.333a21.58 21.58 0 0 1 15.31 6.351c8.471 8.471 8.471 22.158 0 30.63-8.47 8.47-22.156 8.47-30.627 0-8.47-8.472-8.47-22.159 0-30.63a21.594 21.594 0 0 1 15.317-6.35Zm9.865 15c-.316.028-.622.15-.872.344l-12.168 9.13-5.641-5.642c-1.224-1.275-3.63 1.132-2.356 2.356l6.663 6.663c.56.56 1.539.63 2.173.156l13.326-9.995c1.122-.816.43-2.993-.956-3.013a1.666 1.666 0 0 0-.17 0Z"
+                />
+              </g>
+            </svg>
+            <p>
+              Thanks for confirming your subcription! we hope you have fun using our platform. if
+              you ever need support,please feel free to email us at support@LoremGaming.com
+            </p>
+          </div>
+        </div>
+        <!--end  -->
+      </div>
+    </div>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
